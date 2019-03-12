@@ -1,0 +1,27 @@
+//Typography
+$font-stack: 'Geomanist', sans-serif;
+
+//Typography Helpers
+$regular: 400;
+$bold: 700;
+
+// Colour
+$primary: #f54b07;
+$primaryDark: darken($primary, 10%);
+$dark: #2E2426;
+$white: #ffffff;
+
+// Breakpoints
+$sm: 320px;
+$med: 48em; /* 768px; */
+$lg: 64em; /* 1024px */
+$xl: 80em; /* 1280px */
+
+
+// @media only screen and (min-width: 33.75em) {  /* 540px */
+// @media only screen and (min-width: 45em) {  /* 720px */
+// @media only screen and (min-width: 60em) { /* 960px */
+// @media only screen and (min-width: 64em) { /* 1024px */
+// @media only screen and (min-width: 80em) { /* 1280px */
+// @media only screen and (min-width: 90em) { /* 1440px */
+// @media only screen and (min-width: 100em) { /* 1600px */
