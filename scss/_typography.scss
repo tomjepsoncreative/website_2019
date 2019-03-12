@@ -1,3 +1,27 @@
+.booking-info {
+    color: $white;
+    font-family: geomanistlight;
+    font-weight: normal;
+
+    @include font-size(20px);
+    @include line-height(32px);
+
+    @media screen and (min-width: $med) {
+        @include font-size(24px);
+        @include line-height(40px);
+    }
+
+    @media screen and (min-width: $lg) {
+        @include font-size(24px);
+        @include line-height(40px);
+    }
+
+    // @media screen and (min-width: $xl) {
+    //     @include font-size(40px);
+    //     @include line-height(56px);
+    // }     
+}
+
 // hero-details
 // font-size: 40px
 // line-height: 56px
@@ -5,21 +29,27 @@
 // white
 
 .hero-details {
+    color: $white;
     font-family: geomanistlight;
     font-weight: normal;
 
-    @include font-size(40px);
-    @include line-height(56px);
+    @include font-size(24px);
+    @include line-height(32px);
 
     @media screen and (min-width: $med) {
-        @include font-size(40px);
-        @include line-height(56px);
+        @include font-size(32px);
+        @include line-height(40px);
     }
 
     @media screen and (min-width: $lg) {
         @include font-size(40px);
         @include line-height(56px);
     }
+
+    // @media screen and (min-width: $xl) {
+    //     @include font-size(40px);
+    //     @include line-height(56px);
+    // }     
 }
 
 // hero-text
@@ -29,21 +59,27 @@
 // white
 
 .hero-text {
+    color: $white;
     font-family: geomanistbold;
     font-weight: normal;
 
-    @include font-size(72px);
-    @include line-height(112px);
+    @include font-size(38px);
+    @include line-height(56px);
 
     @media screen and (min-width: $med) {
-        @include font-size(72px);
-        @include line-height(112px);
+        @include font-size(52px);
+        @include line-height(76px);
     }
 
     @media screen and (min-width: $lg) {
-        @include font-size(72px);
-        @include line-height(112px);
+        @include font-size(62px);
+        @include line-height(92px);
     }
+
+    // @media screen and (min-width: $xl) {
+    //     @include font-size(72px);
+    //     @include line-height(112px);
+    // }    
 }
 
 // standard-text
@@ -56,19 +92,29 @@
 .standard-text {
     font-family: geomanistlight;
     font-weight: normal;
+    padding-bottom: 32px;
+    
+    &:last-of-type {
+        padding-bottom: 0;
+    }
 
-    @include font-size(64px);
-    @include line-height(96px);
+    @include font-size(30px);
+    @include line-height(46px);
 
     @media screen and (min-width: $med) {
-        @include font-size(64px);
-        @include line-height(96px);
+        @include font-size(44px);
+        @include line-height(62px);
     }
 
     @media screen and (min-width: $lg) {
-        @include font-size(64px);
-        @include line-height(96px);
+        @include font-size(54px);
+        @include line-height(76px);
     }
+
+    // @media screen and (min-width: $xl) {
+    //     @include font-size(64px);
+    //     @include line-height(96px);
+    // }    
 }
 
 // small-content
@@ -81,18 +127,23 @@
     font-family: geomanistlight;
     font-weight: normal;
 
-    @include font-size(40px);
-    @include line-height(56px);
+    @include font-size(24px);
+    @include line-height(32px);
 
     @media screen and (min-width: $med) {
-        @include font-size(40px);
-        @include line-height(56px);
+        @include font-size(32px);
+        @include line-height(40px);
     }
 
     @media screen and (min-width: $lg) {
         @include font-size(40px);
         @include line-height(56px);
     }
+
+    // @media screen and (min-width: $xl) {
+    //     @include font-size(40px);
+    //     @include line-height(56px);
+    // }
 }
 
 // small-highlight-content
@@ -105,18 +156,23 @@
     font-family: geomanistbold;
     font-weight: normal;
 
-    @include font-size(40px);
-    @include line-height(56px);
+    @include font-size(24px);
+    @include line-height(32px);
 
     @media screen and (min-width: $med) {
-        @include font-size(40px);
-        @include line-height(56px);
+        @include font-size(32px);
+        @include line-height(40px);
     }
 
     @media screen and (min-width: $lg) {
         @include font-size(40px);
         @include line-height(56px);
     }
+
+    // @media screen and (min-width: $xl) {
+    //     @include font-size(40px);
+    //     @include line-height(56px);
+    // }
 }
 
 // highlight-content
@@ -129,12 +185,12 @@
     font-family: geomanistbold;
     font-weight: normal;
 
-    @include font-size(56px);
-    @include line-height(80px);
+    @include font-size(36px);
+    @include line-height(50px);
 
     @media screen and (min-width: $med) {
-        @include font-size(56px);
-        @include line-height(80px);
+        @include font-size(46px);
+        @include line-height(60px);
     }
 
     @media screen and (min-width: $lg) {
@@ -145,15 +201,15 @@
 
 a {
     @extend p;
-    color: $primary;
+    color: $dark;
     text-decoration: none;
     transition: text-decoration ease-in-out 0.1s;
 
     &:focus {
-        text-decoration: underline;
+        color: $primary;
     }
     &:hover {
-        text-decoration: underline;
+        color: $primary;
     }
     &:active {
         color: $primaryDark;

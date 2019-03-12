@@ -9,10 +9,128 @@ html, body {
     line-height: 100%;
     color: $dark;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;   
+    -moz-osx-font-smoothing: grayscale;
+    word-break: break-word;
 }
 
 img {
     width: 100%;
     height: 100%;
+}
+
+/********/
+
+.booking-info-container {
+    background: $dark;
+    padding: 12px 20px;
+}
+
+.hero-detail-container {
+    padding-top: 30px;
+
+    @media screen and (min-width: $med) {
+        padding-top: 40px;
+    }
+
+    @media screen and (min-width: $lg) {
+        padding-top: 60px;
+    }
+
+    @media screen and (min-width: $xl) {
+        padding-top: 80px;
+    }
+}
+
+.hero-text-container {
+    padding-top: 80px;
+    padding-bottom: 96px;
+
+    @media screen and (min-width: $med) {
+        padding-top: 152px;
+        padding-bottom: 176px;
+    }
+
+    @media screen and (min-width: $lg) {
+        padding-top: 184px;
+        padding-bottom: 216px;
+    }
+
+    @media screen and (min-width: $xl) {
+        padding-top: 216px;
+        padding-bottom: 312px;
+    }
+}
+
+.standard-text-container {
+    padding-top: 96px;
+    padding-bottom: 88px;
+
+    @media screen and (min-width: $med) {
+        padding-top: 168px;
+        padding-bottom: 132px;
+    }
+
+    @media screen and (min-width: $lg) {
+        padding-top: 200px;
+        padding-bottom: 184px;
+    }
+
+    @media screen and (min-width: $xl) {
+        padding-top: 232px;
+        padding-bottom: 216px;
+    }
+}
+
+.highlight-content-container {
+    padding-bottom: 80px;
+
+    @media screen and (min-width: $med) {
+        padding-bottom: 120px;
+    }
+
+    @media screen and (min-width: $lg) {
+        padding-bottom: 200px;
+    }
+
+    @media screen and (min-width: $xl) {
+        padding-bottom: 216px;
+    }
+}
+
+.quote {
+    border-top: 1px solid rgba(46,36,38,0.25);
+    border-bottom: 1px solid rgba(46,36,38,0.25);
+    padding: 32px 0 32px 0;
+
+    @media screen and (min-width: $med) {
+        padding: 64px 0 64px 0;
+    }
+
+    @media screen and (min-width: $lg) {
+        padding: 96px 0 96px 0;
+    }   
+}
+
+footer {
+    padding: 80px 0;
+
+    @media screen and (min-width: $med) {
+        padding: 96px 0;
+    }
+
+    @media screen and (min-width: $lg) {
+        padding: 200px 0;
+    }
+
+    @media screen and (min-width: $xl) {
+        padding: 216px 0;
+    }    
+}
+
+.hero-background {
+    background: #f54b07;
+    background: -moz-linear-gradient(45deg, #f54b07 0%, #6d3c9f 100%);
+    background: -webkit-linear-gradient(45deg, #f54b07 0%,#6d3c9f 100%);
+    background: linear-gradient(45deg, #f54b07 0%,#6d3c9f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f54b07', endColorstr='#6d3c9f',GradientType=1 );
 }
